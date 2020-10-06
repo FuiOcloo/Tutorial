@@ -13,12 +13,3 @@ var car = {
     drive: function(){ return "drive"; }
 };
 
-var array = [ 
-    "string",
-    100,
-    [ "embed", 200 ],
-    { car: "ford" },
-    function(){ return "drive"; }
-];
-
-console.log( car.make );
