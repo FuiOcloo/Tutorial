@@ -1,15 +1,8 @@
-var car = {
-    make: "volvo",
-    speed: 160,
-    engine: {
-        size: 2.0,
-        make: "bmw",
-        fuel: "petrol",
-        pistons:[
-            { maker: "BMW" },
-            { maker: "BMW2" }
-        ]
-    },
-    drive: function(){ return "drive"; }
-};
+function name(fullname = {}){
+    
+    return fullname.firstname + fullname.lastname;
+}
 
+console.log(
+    name({firstname:"fui", lastname:"ocloo"})
+);
