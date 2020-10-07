@@ -1,14 +1,13 @@
-function Apple(color, weight){
-    this.color = color;
-    this.weight = weight;
-    
+var carLeft = 1,
+    carRight = 0,
+    greenMan = "no";
+
+if (greenMan === "yes"){
+    console.log("cross the road")
 }
-
-Apple.prototype = {
-    eat : function(){return "eat the apple";},
-    throw : function(){return "throw the apple";}
-};
-
-var apple1 = new Apple("red", 99);
-var apple2 = new Apple("green", 109);
-var apple3 = new Apple("yellow", 299);
+else if(carLeft ===0 || carRight === 0){
+    console.log("All clear! Cross the road");
+}
+else {
+    console.log("Stay where you are");
+}
