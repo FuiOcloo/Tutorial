@@ -1,5 +1,5 @@
-var classRegister = ["Lawrence", "John", "Jeff"];
+var symbolName = "value reference";
 
-for (var i = 0; i < classRegister.length;i++){
-    console.log(classRegister[i]);
-}
+let letSymbol = "Scoped value";
+
+const symName = "constant value";
