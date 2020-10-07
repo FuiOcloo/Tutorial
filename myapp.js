@@ -1,5 +1,11 @@
-var symbolName = "value reference";
+var element = document.createElement('div');
 
-let letSymbol = "Scoped value";
+element.style.cssText = "width:200px; height:20px; background:blue;";
 
-const symName = "constant value";
+element.onclick = function(){ alert('hello'); };
+
+//document.body.appendChild( element); 
+
+var target = document.getElementById('yellow');
+
+document.body.insertBefore(element, target);
