@@ -1,11 +1,18 @@
-var element = document.createElement('div');
+ let elements = document.getElementsByName('cssProperty');
 
-element.style.cssText = "width:200px; height:20px; background:blue;";
+let div = document.getElementById('modify');
 
-element.onclick = function(){ alert('hello'); };
+function set(){
+   
+    
+    for(let index = 0; index < elements.length; index++)
+        {
+            let cssProperty = elements[index].getAttribute('id');
+            
+            let cssValue = elements[index].value;
+            
+            div.style[cssProperty] = cssValue;
+        }
+}
 
-//document.body.appendChild( element); 
-
-var target = document.getElementById('yellow');
-
-document.body.insertBefore(element, target);
+document.getElementById('set').addEventListener('click', set);
