@@ -1,8 +1,14 @@
-function name(fullname = {}){
+function Apple(color, weight){
+    this.color = color;
+    this.weight = weight;
     
-    return fullname.firstname + fullname.lastname;
 }
 
-console.log(
-    name({firstname:"fui", lastname:"ocloo"})
-);
+Apple.prototype = {
+    eat : function(){return "eat the apple";},
+    throw : function(){return "throw the apple";}
+};
+
+var apple1 = new Apple("red", 99);
+var apple2 = new Apple("green", 109);
+var apple3 = new Apple("yellow", 299);
